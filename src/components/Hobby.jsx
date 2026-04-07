@@ -35,7 +35,7 @@ const Hobby = () => {
             {/* Placeholder Background */}
             <div style={{ width: '100%', height: '100%', backgroundColor: 'var(--color-bg-alt)', position: 'absolute', top: 0, left: 0 }}></div>
             <div className="project-image-placeholder-text" style={{ zIndex: 1 }}>{hobby.image}</div>
-            <img src={`/assets/images/${hobby.image}`} alt={hobby.title} style={{position:'absolute', top:0, left:0, zIndex:1, width:'100%', height:'100%', objectFit:'cover'}} />
+            <img src={`${import.meta.env.BASE_URL}assets/images/${hobby.image}`} alt={hobby.title} style={{position:'absolute', top:0, left:0, zIndex:1, width:'100%', height:'100%', objectFit:'cover'}} />
             
             <div className="hobby-card-overlay" style={{ zIndex: 2 }}>
               <h3 className="hobby-title">{hobby.title}</h3>

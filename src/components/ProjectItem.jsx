@@ -5,7 +5,7 @@ const ProjectItem = ({ project, onClick }) => {
     <div className="project-item" onClick={onClick}>
       <div className="project-image-wrap">
         <div className="project-image-placeholder-text">{project.image}</div>
-        <img src={`/assets/images/${project.image}`} alt={project.title} style={{position:'relative', zIndex:1, width:'100%', height:'100%', objectFit:'cover'}} />
+        <img src={`${import.meta.env.BASE_URL}assets/images/${project.image}`} alt={project.title} style={{position:'relative', zIndex:1, width:'100%', height:'100%', objectFit:'cover'}} />
       </div>
       <div className="project-content">
         <div className="project-period">{project.period}</div>

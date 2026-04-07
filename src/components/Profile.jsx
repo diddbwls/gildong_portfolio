@@ -12,7 +12,7 @@ const Profile = () => {
           <h3 className="mb-2">Personal Info</h3>
           
           <div className="profile-avatar-container mb-4">
-            <img src="/assets/images/증명사진.jpg" alt="증명사진" className="profile-avatar" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/증명사진.jpg`} alt="증명사진" className="profile-avatar" />
           </div>
 
           <div className="mb-2">
